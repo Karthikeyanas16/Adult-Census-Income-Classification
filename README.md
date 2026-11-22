@@ -201,3 +201,61 @@ The visualizations include:
 8. Confusion matrices for all five classification algorithms.
 
 These visualizations provide an intuitive understanding
+
+### Confusion Matrix Visualization
+
+![Confusion Matrices](screenshots/confusion_matrices.png)
+
+### Individual Evaluation Metric Comparison
+
+![Metric Comparison](screenshots/metric_comparison.png)
+
+## 7. Model Performance Observations
+
+| Model | Observation |
+|---|---|
+| Logistic Regression | Achieved the highest accuracy (85.56%), AUC (0.9101) and precision (0.7403), demonstrating strong overall classification performance. |
+| Decision Tree | Achieved 81.65% accuracy. Its performance was comparatively lower across most evaluation metrics. |
+| K-Nearest Neighbors | Achieved 83.93% accuracy and 0.8677 AUC, demonstrating reasonable classification performance. |
+| Gaussian Naive Bayes | Achieved the highest recall (0.9324), but its accuracy (60.24%) and precision (0.3692) were relatively low. |
+| Random Forest | Achieved the highest F1 Score (0.6740) and MCC (0.5828), providing a good balance between precision and recall. |
+
+## 8. Overall Winner
+
+Random Forest is selected as the overall winner based on its highest F1 Score of 0.6740 and MCC of 0.5828.
+
+Logistic Regression also demonstrated excellent performance, achieving the highest accuracy of 85.56% and AUC of 0.9101.
+
+The final model selection depends on the classification objective and the importance of balancing precision and recall.
+
+## 9. Execution Instructions
+
+### Prerequisites
+
+- Python 3.12
+- Jupyter Notebook or JupyterLab
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Clone the repository
+
+
+```bash
+git clone https://github.com/Karthikeyanas16/Adult-Census-Income-Classification.git
+```
+
+### Execute the assignment
+
+1. Open the project in Jupyter Notebook.
+2. Navigate to the model directory.
+3. Open `ML_Assignment_2_Adult_Income.ipynb`.
+4. Execute the notebook cells sequentially.
+5. Review the model evaluation results and graphical visualizations.
+
+The notebook contains the complete implementation of dataset loading, preprocessing, model training, evaluation and comparison.
+
+
